@@ -1,0 +1,19 @@
+{
+  "name": "understanding_typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyberKnight17/understanding_typescript.git"
+  },
+  "author": "Lawrence Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyberKnight17/understanding_typescript/issues"
+  },
+  "homepage": "https://github.com/cyberKnight17/understanding_typescript#readme"
+}
