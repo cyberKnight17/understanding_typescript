@@ -1,14 +1,22 @@
 console.log("your code goes here");
 
 class Department {
-  name: string;
+  public name: string;
+  private employees: string[] = [];
 
   constructor(name: string) {
     this.name = name;
   }
 
+  addEmployee(employee: string) {
+    this.employees.push(employee);
+  }
+
+  printEmployeeInfo(this: Department) {
+    console.log(this.employees.length + " employees: " + this.employees);
+  }
   describe(this: Department) {
-    console.log("this is ", this.name, "department");
+    console.log("This is " + this.name + "department");
   }
 }
 
@@ -21,3 +29,13 @@ departmentAccounting.describe();
 // const copyDepartmentAccounting = { describe: departmentAccounting.describe };
 
 // copyDepartmentAccounting.describe();
+
+departmentAccounting.addEmployee("Jake");
+departmentAccounting.addEmployee("John");
+departmentAccounting.addEmployee("Joseph");
+
+departmentAccounting.printEmployeeInfo();
+
+// departmentAccounting.employees[0] = "Lawrence";
+
+// departmentAccounting.printEmployeeInfo();
