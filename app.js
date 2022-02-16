@@ -1,9 +1,10 @@
 "use strict";
 console.log("your code goes here");
 class Department {
-    constructor(name) {
-        this.employees = [];
+    constructor(id, name) {
+        this.id = id;
         this.name = name;
+        this.employees = [];
     }
     addEmployee(employee) {
         this.employees.push(employee);
@@ -12,10 +13,10 @@ class Department {
         console.log(this.employees.length + " employees: " + this.employees);
     }
     describe() {
-        console.log("This is " + this.name + "department");
+        console.log("Department ID: " + this.id + "\n" + "Department Name: " + this.name);
     }
 }
-const departmentAccounting = new Department("accounting");
+const departmentAccounting = new Department("d1", "accounting");
 console.log(departmentAccounting);
 departmentAccounting.describe();
 // const copyDepartmentAccounting = { describe: departmentAccounting.describe };
